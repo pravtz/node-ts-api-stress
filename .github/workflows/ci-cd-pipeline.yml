@@ -57,7 +57,10 @@ jobs:
         run: |
           DESCRIPTION=$(cat DOCKERHUB.md)
           REPO_NAME=pravtz/node-ts-api-stress
+          TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${DOCKERHUB_USERNAME}\", \"password\": \"${DOCKERHUB_TOKEN}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
+
           curl -s -X PATCH "https://hub.docker.com/v2/repositories/$REPO_NAME/" \
+          -H "Authorization: JWT $TOKEN" \
           -H "Content-Type: application/json" \
-          -H "Authorization: JWT $(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${DOCKERHUB_USERNAME}\", \"password\": \"${DOCKERHUB_TOKEN}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)" \
           -d "{\"full_description\": \"${DESCRIPTION}\"}"
+
