@@ -50,8 +50,6 @@ jobs:
       - name: Install jq and curl
         run: sudo apt-get install -y jq curl
 
-      - name: Debug description
-        run: cat DOCKERHUB.md
 
       - name: Update DockerHub description
         env:
@@ -65,5 +63,5 @@ jobs:
           curl -s -X PATCH "https://hub.docker.com/v2/repositories/$REPO_NAME/" \
           -H "Authorization: JWT $TOKEN" \
           -H "Content-Type: application/json" \
-          -d "{\"full_description\": \"${DESCRIPTION}\"}"
+          -d "{\"full_description\": \"${OVERVIEW}\"}"
 
