@@ -1,18 +1,4 @@
-# Node.js API com TypeScript - Teste de Estresse (CPU e Memória)
-
-## Commands
-```bash
-docker build -t node-ts-api .
-docker run -p 3000:3000 node-ts-api
-
-```
-
-
-
-
----
-
-# Node.js API com TypeScript - Teste de Estresse (CPU e Memória)
+# Teste de Estresse (CPU e Memória)
 
 Este projeto é uma API simples criada com **Node.js** e **TypeScript**. A API oferece funcionalidades básicas de CRUD com armazenamento em memória e, além disso, implementa testes de estresse controlados separadamente para **CPU** e **memória**.
 
