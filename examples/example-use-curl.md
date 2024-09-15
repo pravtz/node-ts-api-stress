@@ -1,7 +1,5 @@
 ### Script das Requisições em **cURL**
 
-Aqui está o script com as requisições necessárias para testar as funcionalidades da API utilizando o **cURL**:
-
 ```bash
 #!/bin/bash
 
@@ -36,11 +34,6 @@ curl -X GET http://localhost:3000/items/1
 # Deletar um item pelo ID
 curl -X DELETE http://localhost:3000/items/1
 ```
-
-### Documentação das Requisições em **Markdown**
-
-```markdown
-# Documentação das Requisições - API Node.js com Teste de Estresse
 
 Esta documentação detalha as requisições HTTP que podem ser feitas para a API utilizando **cURL**.
 
