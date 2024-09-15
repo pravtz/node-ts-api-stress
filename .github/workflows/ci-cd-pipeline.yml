@@ -50,6 +50,9 @@ jobs:
       - name: Install jq and curl
         run: sudo apt-get install -y jq curl
 
+      - name: Debug description
+        run: cat DOCKERHUB.md
+
       - name: Update DockerHub description
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
