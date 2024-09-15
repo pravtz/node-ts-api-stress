@@ -85,7 +85,7 @@ Se preferir rodar via Docker:
 1. Construa a imagem:
 
 ```bash
-docker build -t node-ts-api-stress .
+docker build -t pravtz/node-ts-api-stress .
 ```
 
 2. Execute o container:
@@ -142,3 +142,8 @@ Resposta esperada:
 }
 ```
 
+---
+
+## Licença
+
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
