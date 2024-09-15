@@ -4,7 +4,6 @@ on:
   push:
     tags:
       - 'v*.*.*'
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -39,8 +38,6 @@ jobs:
         with:
           images: pravtz/node-ts-api-stress
 
-      - name: Copy DockerHub documentation
-        run: cp DOCKERHUB.md ./README.md
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
