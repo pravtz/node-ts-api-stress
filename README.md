@@ -80,12 +80,23 @@ A API roda por padrão na porta `3000`. As seguintes rotas estão disponíveis:
 
 ## Executando com Docker
 
-Se preferir rodar via Docker:
+Se preferir rodar os tests
+
+1. Após o processo de instalação mencionado acima, rode os tests
+
+```bash
+npm run dev
+```
+
+Se preferir rodar via Docker para construir a imagem:
 
 1. Construa a imagem:
 
 ```bash
 docker build -t pravtz/node-ts-api-stress .
+
+# debug
+docker build --no-cache --progress=plain  -t pravtz/node-ts-api-stress .
 ```
 
 2. Execute o container:
@@ -146,4 +157,4 @@ Resposta esperada:
 
 ## Licença
 
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE.md) para detalhes.
