@@ -1,0 +1,43 @@
+# Ignorar arquivos de configuração do Docker
+docker-compose.override.yml
+docker-compose.*.yml
+.dockerignore
+
+# Ignorar diretórios de build do Docker
+**/docker-compose-build/
+**/docker-compose-cache/
+**/docker-compose-logs/
+**/docker-compose-temp/
+
+# Ignorar imagens e containers do Docker
+**/docker-images/
+**/docker-containers/
+**/docker-volumes/
+**/docker-networks/
+
+# Ignorar arquivos de log do Docker
+**/docker-logs/
+**/docker-debug.log
+**/docker-error.log
+
+# Ignorar arquivos temporários do Docker
+**/docker-temp/
+**/docker-tmp/
+
+# Ignorar arquivos de configuração e cache
+node_modules
+npm-debug.log
+yarn-debug.log
+.pnpm-debug.log
+.env
+
+# example
+examples/
+
+node_modules
+dist
+*.log
+.git
+.github
+
+*.md

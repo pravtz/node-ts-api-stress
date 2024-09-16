@@ -131,7 +131,7 @@ dist
 # Ignore arquivos de configuração do Docker
 docker-compose.override.yml
 docker-compose.*.yml
-.dockerignore
+
 
 # Ignore diretórios de build do Docker
 **/docker-compose-build/
